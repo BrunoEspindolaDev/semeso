@@ -1,5 +1,5 @@
 import { getTopRatedMovies } from 'services';
-import { memo, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import MovieCardCompact from '../MovieCardCompact';
 import { Container, List, ListItem, Title } from './TopRatedMovies.styles';
 
@@ -9,8 +9,6 @@ const TopRatedMovies = () => {
   useEffect(() => {
     getTopRatedMovies().then(setMovies);
   }, []);
-
-  console.count('TopRatedMovies');
 
   return (
     <Container>
@@ -26,4 +24,4 @@ const TopRatedMovies = () => {
   );
 };
 
-export default memo(TopRatedMovies);
+export default TopRatedMovies;

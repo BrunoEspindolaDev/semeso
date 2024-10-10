@@ -25,6 +25,20 @@ export const Content = styled.div`
   overflow: hidden;
 `;
 
+export const List = styled.ul`
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  overflow-y: scroll;
+`;
+
+export const ListItem = styled.li`
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+  padding-bottom: 15px;
+`;
+
 export const LoadMore = styled.div`
   padding-bottom: 20px;
   display: flex;
